@@ -1,0 +1,93 @@
+export const profile = {
+  name: 'Abderrahim Elgmouri',
+  title: 'Full Stack Developer',
+  tagline: 'Building scalable systems and modern web experiences with precision and performance.',
+  location: 'Safi, Morocco',
+  email: 'ea.officialbox@gmail.com',
+  phone: '+212 644180050',
+  discord: 'elgmouriabderrahim',
+  github: 'https://github.com/elgmouriabderrahim',
+  linkedin: 'https://www.linkedin.com/in/elgmouriabderrahim/',
+  bio: [
+    'I am a Full Stack Developer based in Safi, Morocco, with a strong foundation in building scalable and high-performance web applications.',
+    'I specialize in backend development using PHP and Laravel, with solid experience designing RESTful APIs, handling authentication with JWT, OAuth2, and Sanctum, and optimizing database performance.',
+    'On the frontend, I build dynamic and responsive interfaces using Vue.js, JavaScript, TypeScript, and Tailwind CSS.',
+    'I am passionate about solving complex problems, taking on challenges, and delivering clean, maintainable code. I am also recognized for my ability to manage time, work under pressure, and collaborate effectively within a team.',
+  ],
+  skills: {
+    frontend: ['Vue.js', 'JavaScript (ES6+)', 'TypeScript', 'Tailwind CSS', 'HTML5 / CSS3'],
+    backend: ['PHP (OOP, MVC)', 'Laravel', 'REST API Development', 'Authentication (JWT, OAuth2, Sanctum)'],
+    database: ['PostgreSQL', 'MySQL', 'MariaDB', 'Query optimization & data modeling'],
+    tools: ['Git / GitHub', 'Docker', 'Postman / Swagger', 'VS Code', 'Jira / Trello', 'DBeaver / pgAdmin'],
+    design: ['Figma', 'Canva', 'Adobe Photoshop', 'Adobe Illustrator'],
+    methodology: ['Agile (Scrum, Kanban)', 'UML (Class diagrams, ERD)'],
+  },
+  featuredProjects: [
+    {
+      name: 'Debriefing System',
+      type: 'Laravel Internal Platform',
+      summary: 'Internal application for tracking and evaluating learners’ skills.',
+      stack: ['Laravel', 'PHP', 'PostgreSQL'],
+      highlights: [
+        'Role-based access system',
+        'Skill evaluation with levels and history tracking',
+        'System modeling for classes, competencies, and sprints',
+      ],
+      impact: 'Structured learner evaluation workflows and centralised competency tracking.',
+    },
+    {
+      name: 'EasyColoc',
+      type: 'Colocation Management Platform',
+      summary: 'Platform for automated debt and balance calculation with secure invitations.',
+      stack: ['Laravel', 'PHP', 'MySQL / PostgreSQL', 'Tailwind CSS'],
+      highlights: [
+        'Automated debt and balance calculation',
+        'Secure invitation system using tokens',
+        'Role management for Admin, Owner, and Member',
+      ],
+      impact: 'Reduced manual roommate accounting and improved onboarding security.',
+    },
+    {
+      name: 'LocalMind API',
+      type: 'Geolocation REST API',
+      summary: 'REST API with a Vue.js frontend for secure CRUD and optimised queries.',
+      stack: ['Laravel', 'REST API', 'Vue.js'],
+      highlights: [
+        'Authentication using Laravel Sanctum',
+        'Pagination and optimized queries',
+        'Frontend interface consuming the API',
+      ],
+      impact: 'Delivered a responsive API-driven product with efficient pagination and secure endpoints.',
+    },
+  ],
+  timeline: [
+    {
+      period: '2025 – Present',
+      institution: 'YouCode',
+      title: 'Full Stack Development',
+      details: 'Focused training in modern web development, software architecture, and production-grade delivery.',
+    },
+    {
+      period: '2021 – 2024',
+      institution: 'Faculty of Safi',
+      title: 'SMI',
+      details: 'Mathematics, Computer Science, and Applications with strong analytical foundations.',
+    },
+    {
+      period: 'Industrial Engineering',
+      institution: 'EST Safi',
+      title: 'Higher Education',
+      details: 'Technical studies with exposure to operations, processes, and systems thinking.',
+    },
+    {
+      period: 'Secondary Education',
+      institution: 'Baccalauréat Sciences Physiques',
+      title: 'Scientific Baccalaureate',
+      details: 'Physics-focused scientific track that built a disciplined problem-solving mindset.',
+    },
+  ],
+  contact: {
+    headline: 'Let’s build something fast, useful, and memorable.',
+    note: 'Available for freelance, remote collaboration, and product teams that value quality and ownership.',
+  },
+};
