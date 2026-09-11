@@ -19,6 +19,7 @@ export const projects = [
     techStack: ['JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'LocalStorage'],
     github: 'https://github.com/elgmouriabderrahim/brief4-Memory_Game',
     featured: true,
+    category: 'Frontend',
   },
   {
     id: 2,
@@ -28,6 +29,7 @@ export const projects = [
     techStack: ['JavaScript', 'HTML5', 'CSS3', 'DOM Manipulation'],
     github: 'https://github.com/elgmouriabderrahim/brief4-Typing-Speed-Game',
     featured: false,
+    category: 'Frontend',
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ export const projects = [
     techStack: ['JavaScript', 'Tailwind CSS', 'API', 'LocalStorage'],
     github: 'https://github.com/elgmouriabderrahim/Brief5-PixelQuest',
     featured: true,
+    category: 'Frontend',
   },
   {
     id: 4,
@@ -46,6 +49,7 @@ export const projects = [
     techStack: ['JavaScript', 'CSS Grid', 'Flexbox'],
     github: 'https://github.com/elgmouriabderrahim/brief6-WorkSphere',
     featured: false,
+    category: 'Frontend',
   },
   {
     id: 5,
@@ -55,6 +59,7 @@ export const projects = [
     techStack: ['PHP', 'MySQL', 'MVC', 'OOP', 'PDO'],
     github: 'https://github.com/elgmouriabderrahim/blogSpace',
     featured: false,
+    category: 'Backend',
   },
   {
     id: 6,
@@ -64,6 +69,7 @@ export const projects = [
     techStack: ['PHP', 'MVC', 'PostgreSQL', 'OOP'],
     github: 'https://github.com/elgmouriabderrahim/debriefing-system',
     featured: false,
+    category: 'Backend',
   },
   {
     id: 7,
@@ -73,6 +79,7 @@ export const projects = [
     techStack: ['Laravel', 'Eloquent', 'MVC', 'PostgreSQL'],
     github: 'https://github.com/elgmouriabderrahim/local-mind',
     featured: false,
+    category: 'Full-Stack',
   },
   {
     id: 8,
@@ -82,6 +89,7 @@ export const projects = [
     techStack: ['Laravel', 'Eloquent ORM', 'Auth', 'MySQL'],
     github: 'https://github.com/elgmouriabderrahim/easyColoc',
     featured: true,
+    category: 'Full-Stack',
   },
   {
     id: 9,
@@ -91,6 +99,7 @@ export const projects = [
     techStack: ['Laravel', 'Vue.js', 'Sanctum', 'REST API'],
     github: 'https://github.com/elgmouriabderrahim/local-mind-api-fullstack',
     featured: true,
+    category: 'Full-Stack',
   },
   {
     id: 10,
@@ -100,6 +109,7 @@ export const projects = [
     techStack: ['Laravel', 'Enums', 'Policies', 'Services', 'PostgreSQL'],
     github: 'https://github.com/elgmouriabderrahim/debriefing-system-laravel',
     featured: true,
+    category: 'Backend',
   },
   {
     id: 11,
@@ -109,6 +119,7 @@ export const projects = [
     techStack: ['Laravel', 'Sanctum', 'Queues', 'Events', 'Pest', 'MySQL', 'REST API'],
     github: 'https://github.com/elgmouriabderrahim/EcoShop',
     featured: false,
+    category: 'Backend',
   },
 ];
 

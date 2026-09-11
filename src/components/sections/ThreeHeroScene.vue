@@ -9,7 +9,7 @@ const canvasWrap = ref(null);
 let dispose = null;
 
 onMounted(async () => {
-  if (!canvasWrap.value || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!canvasWrap.value || window.innerWidth < 700 || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const THREE = await import('three');
   const { Scene, PerspectiveCamera, WebGLRenderer, BufferGeometry, Float32BufferAttribute, PointsMaterial, Points, Color, Group, SphereGeometry, MeshStandardMaterial, Mesh, AmbientLight, DirectionalLight } = THREE;
@@ -30,7 +30,7 @@ onMounted(async () => {
   scene.add(group);
 
   const pointsGeometry = new BufferGeometry();
-  const pointCount = 1800;
+  const pointCount = window.matchMedia('(max-width: 1100px)').matches ? 900 : 1800;
   const positions = new Float32Array(pointCount * 3);
 
   for (let i = 0; i < pointCount; i += 1) {
