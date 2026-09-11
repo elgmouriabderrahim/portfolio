@@ -1,7 +1,7 @@
 export const profile = {
   name: 'Abderrahim Elgmouri',
-  title: 'Full Stack Developer',
-  tagline: 'Building scalable systems and modern web experiences with precision and performance.',
+  title: 'Full-Stack Developer · AI Engineering Student',
+  tagline: 'Building reliable products today while growing toward thoughtful AI engineering.',
   location: 'Safi, Morocco',
   email: 'ea.officialbox@gmail.com',
   phone: '+212 644180050',
@@ -15,12 +15,25 @@ export const profile = {
     'I am passionate about solving complex problems, taking on challenges, and delivering clean, maintainable code. I am also recognized for my ability to manage time, work under pressure, and collaborate effectively within a team.',
   ],
   skills: {
-    frontend: ['Vue.js', 'JavaScript (ES6+)', 'TypeScript', 'Tailwind CSS', 'HTML5 / CSS3'],
-    backend: ['PHP (OOP, MVC)', 'Laravel', 'REST API Development', 'Authentication (JWT, OAuth2, Sanctum)'],
+    backend: ['Python', 'PHP (OOP, MVC)', 'Laravel', 'REST API Development', 'Authentication (JWT, OAuth2, Sanctum)'],
+    frontend: ['JavaScript (ES6+)', 'Vue.js', 'React', 'Tailwind CSS', 'HTML5 / CSS3'],
     database: ['PostgreSQL', 'MySQL', 'MariaDB', 'Query optimization & data modeling'],
-    tools: ['Git / GitHub', 'Docker', 'Postman / Swagger', 'VS Code', 'Jira / Trello', 'DBeaver / pgAdmin'],
-    design: ['Figma', 'Canva', 'Adobe Photoshop', 'Adobe Illustrator'],
-    methodology: ['Agile (Scrum, Kanban)', 'UML (Class diagrams, ERD)'],
+    dataAi: ['Python', 'NumPy', 'Pandas'],
+    tools: ['Git / GitHub', 'Docker', 'Linux', 'Postman / Swagger', 'Jira / Trello', 'DBeaver / pgAdmin'],
+  },
+  aiJourney: [
+    { label: 'Python', stage: 'Learned', detail: 'A core language for backend work and AI foundations.' },
+    { label: 'NumPy / Pandas', stage: 'Learned', detail: 'Data manipulation foundations.' },
+    { label: 'Mathematics + Machine Learning', stage: 'Currently learning', detail: 'Building the theory and practical ML base.' },
+    { label: 'Deep Learning / PyTorch', stage: 'Next', detail: 'Planned after the machine-learning foundation.' },
+    { label: 'LLMs, RAG + AI Agents', stage: 'Future roadmap', detail: 'The systems layer of the AI engineering path.' },
+  ],
+  experience: {
+    role: 'Full-Stack Web Development Intern', company: 'i-gouvernancia', location: 'Casablanca, Morocco', period: 'June 2026 – August 2026', type: 'Internship · 2 months',
+    summary: 'Contributed to the development and improvement of a web platform with a modern Python backend and React frontend.',
+    technologies: ['Python', 'FastAPI', 'React', 'PostgreSQL', 'SQLAlchemy', 'SQLModel', 'Alembic', 'REST API', 'Nginx', 'Linux', 'Swagger / OpenAPI', 'Postman'],
+    responsibilities: ['Developed backend features with Python and FastAPI, including REST API integration.', 'Integrated frontend workflows using React and resolved frontend/backend issues.', 'Designed relational data structures with PostgreSQL, SQLModel, and SQLAlchemy.', 'Managed database migrations with Alembic and improved validation and API error handling.', 'Worked on authentication, roles, permissions, and authorization logic.', 'Supported Linux deployment workflows with Nginx, Git/GitHub, Swagger/OpenAPI, and Postman.'],
+    outcome: 'Strengthened practical skills in backend architecture, databases, frontend/backend integration, debugging, deployment, and professional product delivery.',
   },
   featuredProjects: [
     {
