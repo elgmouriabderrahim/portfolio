@@ -1,6 +1,24 @@
-<template><div class="resume-app"><div class="resume-toolbar"><span>Resume · {{ profile.name }}</span><button class="ubuntu-primary" @click="printResume">Print / Save as PDF</button></div><article class="resume-document"><header><h1>{{ profile.name }}</h1><p class="resume-role">{{ profile.title }}</p><p>{{ profile.location }} · {{ profile.email }} · {{ profile.phone }}</p><p><a :href="profile.github">GitHub</a> · <a :href="profile.linkedin">LinkedIn</a></p></header><section><h2>Profile</h2><p>{{ profile.bio[0] }}</p><p>{{ profile.tagline }}</p></section><section><h2>Technical skills</h2><p v-for="(skills,group) in profile.skills" :key="group"><strong>{{ labels[group] }}:</strong> {{ skills.join(' · ') }}</p></section><section><h2>Experience</h2><h3>{{ profile.experience.role }} · {{ profile.experience.company }}</h3><p>{{ profile.experience.period }} · {{ profile.experience.location }}</p><p>{{ profile.experience.summary }}</p><ul><li v-for="item in profile.experience.responsibilities" :key="item">{{ item }}</li></ul></section><section><h2>Selected projects</h2><div v-for="item in profile.featuredProjects" :key="item.name" class="resume-project"><h3>{{ item.name }}</h3><p>{{ item.summary }} {{ item.impact }}</p><p>{{ item.stack.join(' · ') }}</p></div></section><section><h2>Education</h2><div v-for="item in profile.timeline" :key="item.institution" class="resume-education"><h3>{{ item.institution }} · {{ item.title }}</h3><p>{{ item.period }} — {{ item.details }}</p></div></section></article></div></template>
+<template>
+  <div class="resume-app">
+    <div class="resume-toolbar">
+      <span>CV · {{ profile.name }}</span>
+      <div class="resume-actions">
+        <a class="ubuntu-secondary" :href="resumeUrl" target="_blank" rel="noopener noreferrer">Open PDF ↗</a>
+        <a class="ubuntu-primary" :href="resumeUrl" download="Elgmouri-Abderrahim-CV.pdf">Download CV ↓</a>
+      </div>
+    </div>
+    <object class="resume-pdf" :data="resumeUrl" type="application/pdf" :aria-label="`${profile.name} CV`">
+      <div class="resume-fallback">
+        <AppIcon name="resume" />
+        <h2>CV preview is unavailable</h2>
+        <p>Your browser cannot display the PDF inside this window.</p>
+        <a class="ubuntu-primary" :href="resumeUrl" target="_blank" rel="noopener noreferrer">Open the CV</a>
+      </div>
+    </object>
+  </div>
+</template>
 <script setup>
 import { profile } from '@/data/profile';
-const labels={frontend:'Frontend',backend:'Backend',database:'Database',dataAi:'AI / Data',tools:'DevOps / Tools'};
-function printResume(){window.print();}
+import AppIcon from '@/components/ui/AppIcon.vue';
+import resumeUrl from '@/assets/images/cv/elgmouri-abderrahim-cv.pdf?url';
 </script>

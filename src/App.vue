@@ -14,6 +14,6 @@ import DesktopShell from '@/components/os/DesktopShell.vue';
 const showBoot = ref(!sessionStorage.getItem('developer-os-booted'));
 
 onMounted(() => {
-  document.title = `${profile.name} — ${profile.title}`;
+  document.title = `${profile.name} - ${profile.title}`;
 });
 </script>
