@@ -11,21 +11,24 @@
 
 <script setup>
 import { nextTick, ref } from 'vue';
+import { projects } from '@/data/projects';
+import { profile } from '@/data/profile';
 const input = ref(null);
 const command = ref('');
-const output = ref(['Developer OS terminal — type help to explore.']);
+const output = ref([`${profile.name} — ${profile.title}`, `${profile.location} · Welcome to my workspace.`, 'Type help to explore my work.']);
 const answers = {
-  help: 'Commands: about, skills, projects, experience, education, ai, github, contact, whoami, pwd, ls, neofetch, clear',
-  about: 'Abderrahim Elgmouri — Full-Stack Developer and AI Engineering Student at YouCode.',
+  help: 'Commands: about, role, skills, projects, experience, education, ai, github, contact, whoami, pwd, ls, neofetch, clear',
+  about: `${profile.name} — ${profile.title}.\n${profile.bio[0]}\n${profile.tagline}`,
+  role: profile.title,
   skills: 'Python · PHP/Laravel · JavaScript · Vue · React · PostgreSQL · MySQL · Docker',
-  projects: '11 documented projects are available in the Projects application.',
+  projects: projects.map(project => `${project.title} — ${project.github}`).join('\n'),
   experience: 'Open Experience for the i-gouvernancia Full-Stack Web Development internship.',
-  education: 'YouCode — AI Engineering Student. Faculty of Safi — SMI.',
+  education: profile.timeline.map(item => `${item.institution} — ${item.title} (${item.period})`).join('\n'),
   ai: 'Learned: Python, NumPy, Pandas. Current direction: ML → Deep Learning → AI Engineering.',
   github: 'github.com/elgmouriabderrahim',
-  contact: 'ea.officialbox@gmail.com · Safi, Morocco',
-  whoami: 'visitor', pwd: '/home/abderrahim/developer-os', ls: 'about.txt  projects/  skills/  ai-journey/  contact.txt',
-  neofetch: 'Abderrahim@DeveloperOS\nRole: Full-Stack Developer\nEducation: AI Engineering @ YouCode\nFocus: Backend + AI\nLanguages: Python, JavaScript, PHP\nFrameworks: Vue, React, Laravel\nDatabase: PostgreSQL, MySQL\nOS: Linux',
+  contact: `${profile.email}\n${profile.linkedin}\n${profile.github}`,
+  whoami: `${profile.name} — ${profile.title}`, pwd: '/home/abderrahim/developer-os', ls: 'about.txt  projects/  skills/  ai-journey/  contact.txt',
+  neofetch: `Abderrahim@DeveloperOS\nRole: ${profile.title}\nEducation: AI Engineering @ YouCode\nFocus: Backend + AI\nLanguages: Python, JavaScript, PHP\nFrameworks: Vue, React, Laravel\nDatabase: PostgreSQL, MySQL\nOS: Linux`,
 };
 function runCommand() {
   const value = command.value.trim().toLowerCase();

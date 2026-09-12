@@ -21,7 +21,7 @@
         </h1>
 
         <p ref="tagline" class="mt-7 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg sm:leading-9">
-          Full-stack engineer crafting premium digital products with clean backend architecture, cinematic interfaces, and reliable performance.
+          {{ profile.title }}. {{ profile.tagline }}
         </p>
 
         <div ref="ctaRow" class="mt-10 flex flex-wrap gap-4">
@@ -35,7 +35,7 @@
         <div class="mt-5 space-y-4 text-sm text-slate-200">
           <div class="flex items-center justify-between border-b border-white/10 pb-3">
             <span>Role</span>
-            <span class="font-semibold text-white">Full-Stack Developer</span>
+            <span class="font-semibold text-white text-right">{{ profile.title }}</span>
           </div>
           <div class="flex items-center justify-between border-b border-white/10 pb-3">
             <span>Backend</span>
