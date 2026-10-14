@@ -545,6 +545,8 @@ button:focus-visible,a:focus-visible,input:focus-visible { outline-color: #ed946
 .resume-app { height: 100%; min-height: 100%; display: grid; grid-template-rows: auto minmax(0, 1fr); background: #bbb7bd; }
 .resume-toolbar { position: sticky; z-index: 2; top: 0; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 9px 14px; color: #d9d3dd; background: #242229; font-size: 10px; }
 .resume-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
+.resume-actions button { cursor: pointer; font: inherit; }
+.resume-actions button.resume-selected { border-color: #ec9062; color: #fff; box-shadow: inset 0 -2px #ec9062; }
 .resume-pdf { display: block; width: 100%; height: 100%; min-height: 420px; border: 0; background: #bbb7bd; }
 .resume-fallback { height: 100%; display: grid; place-content: center; justify-items: center; gap: 10px; padding: 30px; color: #302b33; text-align: center; }
 .resume-fallback > svg { width: 56px; height: 56px; }
