@@ -23,8 +23,8 @@
 import { computed, ref } from 'vue';
 import { profile } from '@/data/profile';
 import AppIcon from '@/components/ui/AppIcon.vue';
-import aiResumeUrl from '@/assets/images/cv/elgmouri-abderrahim-cv-ai.pdf?url';
-import devResumeUrl from '@/assets/images/cv/elgmouri-abderrahim-cv-dev.pdf?url';
+import aiResumeUrl from '@/assets/images/cv/cv-ai.pdf?url';
+import devResumeUrl from '@/assets/images/cv/cv-dev.pdf?url';
 
 const selectedCv = ref('ai');
 const resumeUrl = computed(() => selectedCv.value === 'ai' ? aiResumeUrl : devResumeUrl);
